@@ -1,0 +1,18 @@
+CREATE DATABASE concredito
+
+CREATE TABLE `captura` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `nombre` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+ `primerapellido` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+ `segundoapellido` varchar(50) COLLATE utf8_unicode_ci DEFAULT '',
+ `calle` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+ `numero` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+ `colonia` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+ `codigopostal` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+ `telefono` char(10) COLLATE utf8_unicode_ci NOT NULL,
+ `rfc` varchar(13) COLLATE utf8_unicode_ci NOT NULL,
+ `documentos` text COLLATE utf8_unicode_ci NOT NULL,
+ `estatus` varchar(10) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Enviado',
+ `comentario` text COLLATE utf8_unicode_ci DEFAULT '',
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci
